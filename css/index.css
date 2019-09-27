@@ -187,6 +187,24 @@ a {
   border-bottom: 2px dashed darkgrey;
   width: 100%;
 }
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    padding: 0px;
+  }
+  nav h1 {
+    padding: 0px;
+    padding-top: 15%;
+  }
+  nav a {
+    padding: 20px 30px;
+  }
+  nav div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -245,4 +263,56 @@ a {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  padding: 12px;
+  border-radius: 10px;
+  background-color: teal;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1.5vw;
+  width: 90%;
+}
+@media (max-width: 600px) {
+  .home {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+  .home .content-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .home .content-section .text-content {
+    width: 100%;
+  }
+  .home .content-section .img-content {
+    width: 100%;
+    padding-left: 0;
+  }
+  .home .content-section .img-content img {
+    border-radius: 10px;
+  }
+  .home .inverse-content {
+    flex-direction: column-reverse;
+  }
+  .home .content-pick {
+    display: flex;
+    flex-direction: column;
+  }
+  .home .content-pick .destination {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .home .content-pick .destination .btn {
+    padding: 12px;
+    border-radius: 10px;
+    background-color: #17A2B8;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    font-size: 3.5vw;
+    width: 80%;
+  }
 }

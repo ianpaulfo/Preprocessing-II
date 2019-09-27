@@ -20,3 +20,26 @@ a {
     border-bottom: 2px dashed darkgrey;
     width: 100%;
 }
+
+@media @mobile {
+    nav {
+        flex-direction: column;
+        padding: 0px;
+        
+        h1{
+            padding: 0px;
+            padding-top: 15%;
+        }
+        a {
+            padding: 20px 30px;
+           
+        }
+    
+        div {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+        }
+    }
+}

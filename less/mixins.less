@@ -2,14 +2,18 @@
 
 
 
-.btn(@bkrcolor, @color ) {
-    padding: 10px 40px;
+.custom-btn(@bkrcolor, @color, @width, @font-size) {
+    padding: 12px;
     border-radius: 10px;
     background-color: @bkrcolor;
     color: @color;
     cursor: pointer;
+    text-align: center;
+    font-size: @font-size;
+    width: @width;
   
-    &:hover {
-      background-color: darken(teal, 10%)
+    // &:hover {
+    //   background-color: darken(teal, 10%)}
     }
-  }
+
+
